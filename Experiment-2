@@ -1,0 +1,46 @@
+%EXPERIMENT-2
+% Define the range of x values with a larger increment
+x1 = -20:1:10; % Larger increment, adjust as needed
+
+% Calculate the corresponding y values for each function
+y1 = x1.^2;
+y2 = x1.^3;
+
+% Creating the first plot for y = x^2
+figure; % Create a new figure
+plot(x1, y1);
+xlabel('x');
+ylabel('y');
+title('Plot of y = x^2');
+
+% Create the second plot for y = x^3
+figure; % Create another new figure
+plot(x1, y2);
+xlabel('x');
+ylabel('y');
+title('Plot of y = x^3');
+
+
+%PART-2 OF EXPERIMENT-2
+% Define the range of x values with a smaller increment
+x2 = -20:0.01:10; % Smaller increment, adjust as needed
+
+% Calculate the corresponding y values for each function
+y3 = x2.^2;
+y4 = x2.^3;
+
+% Create the third plot for y = x^2 with smaller increment
+figure; % Create a new figure
+plot(x2, y3);
+xlabel('x');
+ylabel('y');
+title('Plot of y = x^2 with Smaller Increment');
+
+% Create the fourth plot for y = x^3 with smaller increment
+figure; % Create another new figure
+plot(x2, y4);
+xlabel('x');
+ylabel('y');
+title('Plot of y = x^3 with Smaller Increment');
+
+
