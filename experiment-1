@@ -1,0 +1,27 @@
+%EXPERIMENT-1To write a program for plotting y=x, y=2x, y=2x+3 and y= x^3+7 on the same graph using
+%hold on command and also plot for different range of values for x.
+
+% Define the range of x values
+x = -20:0.1:10; % You can adjust the range and step size as needed
+
+% Calculate the corresponding y values for each function
+y1 = x;
+y2 = 2 * x;
+y3 = 2 * x + 3;
+y4 = x.^3 + 7;
+
+% Create the plot
+figure; % Create a new figure
+hold on; % Enable hold on to overlay plots
+
+
+% Plot each function with a specific color and label
+plot(x,y1)
+plot(x,y2)
+plot(x,y3)
+plot(x,y4)
+
+% Add labels and legend
+xlabel('x');
+ylabel('y');
+title('Plot of Multiple Functions');
