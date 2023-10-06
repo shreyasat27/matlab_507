@@ -1,7 +1,8 @@
 
 %3.To draw sin x and cos x on the same graph , also plot the different graph for any two polynomials.
 
-x = linspace(0,2*pi,5000);
+
+x = linspace(0,2*pi,1000);
 plot_sin = sin(x);
 plot_cos=cos(x);
 
@@ -9,19 +10,20 @@ plot_cos=cos(x);
 
 figure; %create a new figure
 
-plot(x,plot_sin,'b','Linewidth',2,   'DisplayName', 'sin(x)')
-hold on; 
-plot(x,plot_cos, 'r', 'LineWidth', 2, 'DisplayName', 'cos(x)')
+plot(x,plot_sin, 'LineWidth',2,'DisplayName', 'sin(x)')
+hold on;
+plot(x,plot_cos, 'LineWidth', 2, 'DisplayName', 'cos(x)')
 
 xlabel('x');
 ylabel('y');
 
 title('Plot of sin(x) and cos(x)');
 
-legend('Location','north');
+legend('Location','south');
 grid on;
 
 hold off; 
+
 
 
 %any two polynomials y = x.^2 + 2x. + 1 and g = x.^3 + 4x. + 10
